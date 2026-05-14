@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Clientes - Tirinha Embalagens</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar__logo">
+            <img src="assets/logo.png" alt="Logo">
+        </div>
+
+        <nav class="sidebar__menu">
+
+            <a href="dashboard.html" class="sidebar__item">
+                <i class="ri-dashboard-line"></i>
+                DASHBOARD
+            </a>
+
+            <a href="produtos.html" class="sidebar__item">
+                <i class="ri-box-3-line"></i>
+                PRODUTOS
+            </a>
+
+            <a href="pedidos.html" class="sidebar__item">
+                <i class="ri-shopping-cart-line"></i>
+                PEDIDOS
+            </a>
+
+            <a href="clientes.html" class="sidebar__item sidebar__item--active">
+                <i class="ri-user-3-line"></i>
+                CLIENTES
+            </a>
+
+            <a href="perfil.html" class="sidebar__item">
+                <i class="ri-user-settings-line"></i>
+                PERFIL
+            </a>
+
+        </nav>
+    </aside>
+
+    <main class="main">
+
+        <header class="main__header">
+            <h1>CLIENTES</h1>
+            <button class="btn btn--primary" onclick="window.location.href='addclientes.html'">
+                <i class="ri-add-box-line"></i>
+                ADICIONAR
+            </button>
+        </header>
+
+        <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>CPF</th>
+                    <th>TELEFONE</th>
+                    <th>AÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>ANA CLARA</td>
+                    <td>568.931.574-11</td>
+                    <td>+55 (11) 11123-4767</td>
+                    <td><a href="editclientes.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> </td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="editclientes.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>  </td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="editclientes.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>   </td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="editclientes.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="editclientes.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="editclientes.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>   </td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="editclientes.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="editclientes.html" class="table__link">EDITAR</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>   </td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="editclientes.html" class="table__link">EDITAR</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    </main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
