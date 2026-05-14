@@ -1,17 +1,18 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Dashboard</title>
+    <title>Visualizar Pedido - Tirinha Embalagens</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -23,27 +24,27 @@
 
         <nav class="sidebar__menu">
 
-            <a class="sidebar__item">
+            <a href="dashboard.html" class="sidebar__item">
                 <i class="ri-dashboard-line"></i>
                 DASHBOARD
             </a>
 
-            <a class="sidebar__item">
+            <a href="produtos.html" class="sidebar__item">
                 <i class="ri-box-3-line"></i>
                 PRODUTOS
             </a>
 
-            <a class="sidebar__item sidebar__item--active">
+            <a href="pedidos.html" class="sidebar__item sidebar__item--active">
                 <i class="ri-shopping-cart-line"></i>
                 PEDIDOS
             </a>
 
-            <a class="sidebar__item">
+            <a href="clientes.html" class="sidebar__item">
                 <i class="ri-user-3-line"></i>
                 CLIENTES
             </a>
 
-            <a class="sidebar__item">
+            <a href="perfil.html" class="sidebar__item">
                 <i class="ri-user-settings-line"></i>
                 PERFIL
             </a>
@@ -57,9 +58,50 @@
             <h1>PEDIDOS</h1>
         </header>
 
+        <section class="order-card">
+            <div class="order-column">
+                <div class="order-group">
+                    <span class="order-label">ID:</span>
+                    <span class="order-value">1</span>
+                </div>
 
+                <div class="order-group">
+                    <span class="order-label">PAGAMENTO:</span>
+                    <span class="order-value">PIX</span>
+                </div>
+
+                <div class="order-group">
+                    <span class="order-label">PRODUTOS:</span>
+                    <span class="order-value">2 - CAIXA OVO DE COLHER</span>
+                </div>
+            </div>
+
+            <div class="order-column">
+                <div class="order-group">
+                    <span class="order-label">CLIENTE:</span>
+                    <span class="order-value">ANA CLARA</span>
+                    <span class="order-subvalue">CPF: 568.931.574-11</span>
+                    <span class="order-subvalue">TEL: +55 (11) 11123-4767</span>
+                </div>
+
+                <div class="order-group">
+                    <span class="order-label">TOTAL:</span>
+                    <span class="order-value">R$110,50</span>
+                </div>
+
+                <div class="order-group">
+                    <span class="order-label">STATUS:</span>
+                    <div class="status-indicators">
+                        <div class="status-dot status-dot--active"></div>
+                        <div class="status-dot status-dot--inactive"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
