@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Perfil - Tirinha Embalagens</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar__logo">
+            <img src="assets/logo.png" alt="Logo">
+        </div>
+
+        <nav class="sidebar__menu">
+
+            <a href="dashboard.html" class="sidebar__item">
+                <i class="ri-dashboard-line"></i>
+                DASHBOARD
+            </a>
+
+            <a href="produtos.html" class="sidebar__item ">
+                <i class="ri-box-3-line"></i>
+                PRODUTOS
+            </a>
+
+            <a href="pedidos.html" class="sidebar__item">
+                <i class="ri-shopping-cart-line"></i>
+                PEDIDOS
+            </a>
+
+            <a href="clientes.html" class="sidebar__item">
+                <i class="ri-user-3-line"></i>
+                CLIENTES
+            </a>
+
+            <a href="perfil.html" class="sidebar__item sidebar__item--active">
+                <i class="ri-user-settings-line"></i>
+                PERFIL
+            </a>
+
+        </nav>
+    </aside>
+
+    <main class="main">
+
+        <header class="main__header">
+            <h1>PERFIL</h1>
+        </header>
+
+        <section class="profile-card">
+            <div class="profile-info">
+                <div class="profile-group">
+                    <span class="profile-label">NOME:</span>
+                    <span class="profile-value">NICOLAS CAMPOS DALASTRA</span>
+                </div>
+
+                <div class="profile-group">
+                    <span class="profile-label">EMAIL:</span>
+                    <span class="profile-value">ncamposdalastra@gmail.com</span>
+                </div>
+
+                <div class="profile-group">
+                    <span class="profile-label">CARGO:</span>
+                    <span class="profile-value">GERENTE</span>
+                </div>
+            </div>
+
+            <div class="profile-avatar">
+                <i class="ri-user-fill" style="font-size: 120px; color: #fff;"></i>
+            </div>
+
+            <button class="btn-edit-profile" onclick="window.location.href='editperfil.html'">
+                <i class="ri-pencil-line"></i>
+                EDITAR
+            </button>
+        </section>
+
+    </main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
